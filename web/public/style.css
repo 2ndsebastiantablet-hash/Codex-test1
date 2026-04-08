@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #fff;
+}
+
+.panel {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  width: min(90vw, 420px);
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+  padding: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.row { margin: 8px 0; }
+.buttons { display: grid; gap: 8px; }
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button { cursor: pointer; }
+
+.room-list {
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.hud {
+  position: fixed;
+  right: 12px;
+  top: 12px;
+  z-index: 10;
+  text-align: right;
+  background: rgba(0,0,0,.6);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hidden { display: none; }
